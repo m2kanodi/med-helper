@@ -1,0 +1,78 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400&display=swap');
+
+body {
+  font-family: 'Merriweather', serif;
+  background-color: #EBDCCB;
+  margin: 0;
+  padding: 0;
+  color: #17183B;
+}
+
+.navbar {
+  background-color: #17183B;
+  padding: 0.5em 1em;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 1em;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #EBDCCB;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: #4E5166;
+}
+
+.nav-item:hover a {
+  color: #fff;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1em;
+  padding: 1em;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  margin: 1em;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+  color: #17183B;
+  font-size: 1.5em;
+}
+
+.card p,
+.card li {
+  font-size: 1em;
+}
+
